@@ -11,16 +11,16 @@ ACCESS_KEY = 'XXXXXXXXXXXXXXXXXXXXXXX'
 SECRET_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 remotedirectorypath = "XXXXXXXXXXXXXXXX"
 s3_file_path = "XXXXXXXXXXXXXXXX"
-localdirectorypath = "C:\\Users\\Sindur\\Downloads\\NOVONORDISK\\sftp\\"
+localdirectorypath = "C:\\Users\\Sindur\\Downloads\\sftp\\"
 
 
 def sftpDownload():
     cnopts = sftp.CnOpts()
     cnopts.hostkeys = None
-    localpath = "C:\\Users\\Sindur\\Downloads\\NOVONORDISK\\sftp\\"
+    localpath = "C:\\Users\\Sindur\\Downloads\\sftp\\"
     try:
 
-        with sftp.Connection(host = "conduit.novonordisk-us.com",username = "NNBISFTP",password = "jm6753kg",cnopts = cnopts)as conn:
+        with sftp.Connection(host = "conduit.novonordisk-us.com",username = "XXXXX",password = "XXXXX",cnopts = cnopts)as conn:
             print("Connection succesfully established ... ")
             print("Directory Information")
             #print(conn.chdir('/Folders/Impact/Test'))
